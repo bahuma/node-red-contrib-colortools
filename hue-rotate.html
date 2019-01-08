@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    RED.nodes.registerType('hue-rotate',{
+        category: 'colortools',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+            rotatin: {value: 0}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"hue-rotate";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="hue-rotate">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-rotation"><i class="icon-tag"></i> Rotation</label>
+        <input type="text" id="node-input-rotation" placeholder="Rotation (in deg)">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="hue-rotate">
+    <p>A simple node that converts the message payloads into all hue-rotate characters</p>
+</script>
