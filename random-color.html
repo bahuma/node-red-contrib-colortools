@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('random-color',{
+        category: 'colortools',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"random-color";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="random-color">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="random-color">
+    <p>A simple node that generates a random rgb color. Outputs as a json object with key r, g and b.</p>
+</script>
