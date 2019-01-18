@@ -1,0 +1,6 @@
+deploy:
+  provider: npm
+  email: "max.bachhuber@bahuma.io"
+  api_key: $API_KEY
+  on:
+    tags: true
