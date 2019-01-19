@@ -18,5 +18,5 @@ module.exports = function (RED) {
     });
   }
 
-  RED.nodes.registerType("hue-rotate", HueRotateNode);
+  RED.nodes.registerType("random-color", RamdomColorNode);
 }
