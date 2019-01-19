@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-colortools",
-  "version": "1.0.0",
+  "version": "1.1.4",
   "description": "Provides some nodes for color operations",
   "main": "index.js",
   "scripts": {

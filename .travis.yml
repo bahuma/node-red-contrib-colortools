@@ -3,6 +3,5 @@ deploy:
   provider: npm
   email: "max.bachhuber@bahuma.io"
   api_key: $API_KEY
-  tag: $TRAVIS_TAG
   on:
     tags: true
