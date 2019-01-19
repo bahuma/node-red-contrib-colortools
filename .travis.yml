@@ -5,3 +5,4 @@ deploy:
   api_key: $API_KEY
   on:
     tags: true
+    condition: $TRAVIS_TAG != '1.0.0'
